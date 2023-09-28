@@ -1,3 +1,11 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 .container {
   width: 600px;
   height: 350px;
@@ -6,11 +14,11 @@
   flex-direction: column;
   align-items: center;
   border: 0;
-  background-color: lightslategray;
+  background-color: #788899;
   justify-content: center;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  border-radius: 25px;
 }
 
 main {
@@ -45,4 +53,32 @@ button:hover {
 .time {
   display: flex;
   flex-direction: row;
+}
+
+.time h1 {
+  font-size: 4em;
+  margin: 0.5em 0;
+}
+
+#lap-board {
+  text-decoration: underline;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  width: 200px;
+  border-radius: 0 0 20px 20px;
+  background: rgb(120, 136, 153);
+  background: linear-gradient(
+    180deg,
+    rgba(120, 136, 153, 1) 26%,
+    rgba(155, 221, 218, 1) 100%
+  );
+
+  border-top: 5px solid black;
+}
+
+#lap-board h1 {
+  margin: 10px;
+  transform-origin: 0%;
 }
