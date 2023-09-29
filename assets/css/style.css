@@ -82,3 +82,99 @@ button:hover {
   margin: 10px;
   transform-origin: 0%;
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .container {
+    width: 300px;
+    height: 450px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+    background-color: #788899;
+    justify-content: center;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+    border-radius: 25px;
+  }
+
+  main {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container > h1 {
+    font-size: 2em;
+    color: white;
+  }
+
+  .btnCont {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button {
+    width: 80px;
+    height: 35px;
+    border-radius: 15px;
+    border: 0;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    font-size: 1em;
+    font-weight: bold;
+    background-color: khaki;
+  }
+
+  button:hover {
+    transform: scale(1.2);
+  }
+
+  .time {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .time h1 {
+    font-size: 3em;
+    margin: 0.2em 0;
+  }
+
+  #lap-board {
+    text-decoration: underline;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    width: 200px;
+    border-radius: 0 0 20px 20px;
+    background: rgb(120, 136, 153);
+    background: linear-gradient(
+      180deg,
+      rgba(120, 136, 153, 1) 26%,
+      rgba(155, 221, 218, 1) 100%
+    );
+
+    border-top: 5px solid black;
+  }
+
+  #lap-board h1 {
+    margin: 10px;
+    transform-origin: 0%;
+  }
+}
